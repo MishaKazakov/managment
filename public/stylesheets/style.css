@@ -1,0 +1,15 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {color: #00B7FF;}
+
+.deps a{font-size: 36px;}
+
+.table tr td{
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+.hide {display: none;}

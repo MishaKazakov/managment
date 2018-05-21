@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1
+    a(href='/') К отделам
+  table.table
+    tr
+      th Имя
+      th Возраст
+    while !items.isEOF()
+      tr
+        -let line = items.getRow()
+        -var dep = line[0];
+        td= line[2]
+        td= line[3]
+        td
+          a(href=`/edit/${line[0]}/${line[1]}`) редактировать
+        td
+          a(href=`/delete/${line[1]}`) удалить
+  h2
+    a(href=`/add/${dep}`) добавить сотрудника
+  

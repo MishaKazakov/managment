@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Отделы
+  div.deps
+
+    while !items.isEOF()
+      -let item = items.getRow()
+      a(href=`deparment/${item[0]}`)= item[1]
+      span= `${' '}`
+

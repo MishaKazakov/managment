@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form(action="/add-handler/" method="post")
+    input(name="dep-id" value=items[0]).hide
+    input(type="text", name="name")
+    label(for="name") Имя
+    br
+    input(type="text" name="age")
+    label(for="age") Возраст
+    br
+    input(type="submit", value="OK")

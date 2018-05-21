@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  -let line = items.getRow()
+  form(action="/edit-handler/" method="post")
+    input(name="emp-id" value=line[1]).hide
+    input(type="text", name="name" value=`${line[2]}`)
+    label(for="name") Имя
+    br
+    input(type="text" name="age" value=`${line[3]}`)
+    label(for="age") Возраст
+    br
+    input(type="submit", value="OK")
