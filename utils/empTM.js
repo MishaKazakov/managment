@@ -55,7 +55,6 @@ class empTM {
         num = i;  
     });
     this.data.splice(num,1)
-    console.log(this.data)
     let csv = papa.unparse({
       data: this.data,
     })
