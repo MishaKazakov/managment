@@ -39,6 +39,7 @@ class empTM {
       if (emp[1] == id) {
         emp[2] = data[0];
         emp[3] = data[1];
+        emp[4] = data[2];        
       }
       return emp;
     })

@@ -7,12 +7,14 @@ block content
     tr
       th Имя
       th Возраст
+      th Должность
     while !items.isEOF()
       tr
         -let line = items.getRow()
         -var dep = line[0];
         td= line[2]
         td= line[3]
+        td= line[4]
         td
           a(href=`/edit/${line[0]}/${line[1]}`) редактировать
         td

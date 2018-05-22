@@ -8,17 +8,6 @@ router.get('/', function (req, res, next) {
     const data = dep.geAll();
     res.render('index', { items: data })
   });
-
-  // fs.readFile(__dirname + '/../db/departments.csv', (err, data) => {
-  //   let text = papa.parse(data.toString('utf8'), {
-  //     complete: (result) => {
-  //       result.data.splice(0, 1);
-  //       result.data.splice(result.data.length - 1);
-  //       res.render('index', { departments: result.data });
-  //     }
-  //   });
-  // });
-
 });
 
 module.exports = router;
